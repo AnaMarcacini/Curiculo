@@ -12,13 +12,31 @@
 <body>
 
     <div class="card">
+
+        <button class="btn-back" onclick="history.back()" aria-label="Voltar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="#9b5de5" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M9 18l-6-6 6-6" />
+                <path d="M15 12H3" />
+            </svg>
+        </button>
         <img src="src/AnaMarcacini.JPG" alt="Foto de Ana Helena" class="avatar" />
         <div class="typing">What language?</div>
         <div class="quote">Thanks for your interest</div>
         <div class="buttons">
-            <button class="btn" onclick="window.open('curriculo-pt.pdf', '_blank')">🇧🇷 Português</button>
-            <button class="btn" onclick="window.open('curriculo-en.pdf', '_blank')">🇺🇸 Inglês</button>
+            <button class="btn" onclick="window.open('docs/AnaMarcacini_pt.pdf', '_blank')">🇧🇷 Português</button>
+            <button class="btn" onclick="window.open('docs/AnaMarcacini_eng.pdf', '_blank')">🇺🇸 Inglês</button>
         </div>
+        <!-- <button class="btn voltar" onclick="history.back()">← Voltar</button> -->
+
+        <!-- <button class="btn-back" onclick="history.back()" aria-label="Voltar">
+            <img src="src/voltar_preto.svg" alt="Voltar" width="24" height="24" />
+        </button> -->
+        <div class="btn-container">
+            <button class="btn voltar" onclick="history.back()">← Voltar</button>
+        </div>
+
+
     </div>
 
 </body>
